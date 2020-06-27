@@ -24,12 +24,6 @@ jobs:
       with:
         repository: SmartHub-Io/SmartHub
         path: develop
-        
-    - name: install choco
-      run: choco install docfx
-   
-    - name: docfx init
-      run: docfx init -q
       
     - uses: nikeee/docfx-action@master
       name: Build Documentation
