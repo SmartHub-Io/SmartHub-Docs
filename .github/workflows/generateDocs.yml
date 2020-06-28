@@ -39,12 +39,15 @@ jobs:
       
     - name: build metadata to docs fodler
       run: docfx metadata docfx_project/docfx.json 
+        
+    - name: move solution
+      run: |
+        mkdir D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src
+        move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src
       
     - name: build docu
       run: docfx build docfx_project/docfx.json -o docs
-      
-
-      
+        
     - name: tes
       run: |
         ls
@@ -56,12 +59,6 @@ jobs:
         ls
         cd develop
         ls
-        
-    - name: move solution
-      run: |
-        mkdir D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src
-        move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src
-      
         
     - name: GitHub Pages
       uses: crazy-max/ghaction-github-pages@v2.1.0
