@@ -54,7 +54,7 @@ jobs:
       uses: crazy-max/ghaction-github-pages@v2.1.0
       with:
         # Build directory to deploy
-        build_dir: _site
+        build_dir: docsetPath/_site
         # The committer name and email address
         committer: max
         # The author name and email address
