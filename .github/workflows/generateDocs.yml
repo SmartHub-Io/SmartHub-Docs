@@ -37,18 +37,21 @@ jobs:
     - name: init docfx
       run: docfx init -q
       
-    - name: meta docfx
-      run: docfx metadata docfx_project/docfx.json
-      
-    - name: docs docfx
-      run: docfx build docfx_project/docfx.json -o docs      
+    - name: build docu to docs fodler
+      run: docfx metadata docfx_project/docfx.json -o docs     
       
     - name: tes
       run: |
         ls
-        cd docs
+        cd docs/_site
         ls
-      
+        
+    - name: test
+      run: |
+        ls
+        cd develop
+        ls
+        
     - name: GitHub Pages
       uses: crazy-max/ghaction-github-pages@v2.1.0
       with:
