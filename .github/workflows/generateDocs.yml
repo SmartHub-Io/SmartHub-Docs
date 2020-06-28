@@ -15,7 +15,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -24,17 +24,7 @@ jobs:
       with:
         repository: SmartHub-Io/SmartHub
         path: develop
-      
-    - name: install mono
-      run: |
-        sudo apt install gnupg ca-certificates
-        sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
-        echo "deb https://download.mono-project.com/repo/ubuntu stable-bionic main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
-        sudo apt update
-    
-    - name: install mono
-      run: sudo apt install mono-devel
-      
+           
     - name: Chocolatey Action
       uses: crazy-max/ghaction-chocolatey@v1.2.2
       with:
@@ -53,9 +43,21 @@ jobs:
     - name: docs docfx
       run: docfx build docfx_project/docfx.json -o docs      
       
-    # Publish generated site using GitHub Pages
-    - uses: maxheld83/ghpages@master
-      name: Publish Documentation on GitHub Pages
-      env:
-        BUILD_DIR: _site # docfx's default output directory is _site
-        GH_PAT: ${{ secrets.GH_PAT }} # See https://github.com/maxheld83/ghpages
+    # Publish generated site using GitHub Pages#
+ #   - uses: maxheld83/ghpages@master
+  #    name: Publish Documentation on GitHub Pages
+   #   env:
+    #    BUILD_DIR: _site # docfx's default output directory is _site
+     #   GH_PAT: ${{ secrets.GH_PAT }} # See https://github.com/maxheld83/ghpages
+      
+    - name: GitHub Pages
+      uses: crazy-max/ghaction-github-pages@v2.1.0
+      with:
+        # Build directory to deploy
+        build_dir: _site
+        # The committer name and email address
+        committer: max
+        # The author name and email address
+        author: maximilian2304@t-online.de
+        # Commit message
+        commit_message: github pages update
