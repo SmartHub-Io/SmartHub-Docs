@@ -43,10 +43,12 @@ jobs:
     - name: build docu
       run: docfx build docfx_project/docfx.json -o docs
       
+
+      
     - name: tes
       run: |
         ls
-        cd docs/_site
+        cd docfx_project
         ls
         
     - name: test
@@ -54,6 +56,12 @@ jobs:
         ls
         cd develop
         ls
+        
+    - name: move solution
+      run: |
+        mkdir D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src
+        move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src
+      
         
     - name: GitHub Pages
       uses: crazy-max/ghaction-github-pages@v2.1.0
