@@ -50,6 +50,9 @@ jobs:
     #    BUILD_DIR: _site # docfx's default output directory is _site
      #   GH_PAT: ${{ secrets.GH_PAT }} # See https://github.com/maxheld83/ghpages
       
+    - name: tes
+      run: ls
+      
     - name: GitHub Pages
       uses: crazy-max/ghaction-github-pages@v2.1.0
       with:
