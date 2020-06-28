@@ -43,13 +43,6 @@ jobs:
     - name: docs docfx
       run: docfx build docfx_project/docfx.json -o docs      
       
-    # Publish generated site using GitHub Pages#
- #   - uses: maxheld83/ghpages@master
-  #    name: Publish Documentation on GitHub Pages
-   #   env:
-    #    BUILD_DIR: _site # docfx's default output directory is _site
-     #   GH_PAT: ${{ secrets.GH_PAT }} # See https://github.com/maxheld83/ghpages
-      
     - name: tes
       run: |
         ls
@@ -59,6 +52,7 @@ jobs:
     - name: GitHub Pages
       uses: crazy-max/ghaction-github-pages@v2.1.0
       with:
+        target_branch: gh-pages
         # Build directory to deploy
         build_dir: docs/_site
         # The committer name and email address
