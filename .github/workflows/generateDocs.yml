@@ -15,7 +15,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -25,26 +25,32 @@ jobs:
         repository: SmartHub-Io/SmartHub
         path: develop
       
+    - name: install mono
+      run: |
+        sudo apt install gnupg ca-certificates
+        sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+        echo "deb https://download.mono-project.com/repo/ubuntu stable-focal main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
+        sudo apt update
+    
+    - name: install mono
+      run: sudo apt install mono-devel
+      
     - name: Chocolatey Action
       uses: crazy-max/ghaction-chocolatey@v1.2.2
       with:
         # Arguments to pass to Chocolatey
         args: -h
       
-#    - uses: nikeee/docfx-action@master
- #     name: Build Documentation
-  #    with:
-   #     args: docfx.json
-
-    - name: isntall docfx
+    - name: install docfx
       run: choco install docfx
-    - name: init
+      
+    - name: init docfx
       run: docfx init -q
       
-    - name: meta
+    - name: meta docfx
       run: docfx metadata docfx_project/docfx.json
       
-    - name: docs
+    - name: docs docfx
       run: docfx build docfx_project/docfx.json -o docs      
       
     # Publish generated site using GitHub Pages
