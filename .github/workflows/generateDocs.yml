@@ -37,8 +37,11 @@ jobs:
     - name: init docfx
       run: docfx init -q
       
-    - name: build docu to docs fodler
-      run: docfx metadata docfx_project/docfx.json -o docs     
+    - name: build metadata to docs fodler
+      run: docfx metadata docfx_project/docfx.json 
+      
+    - name: build docu
+      run: docfx build docfx_project/docfx.json -o docs
       
     - name: tes
       run: |
