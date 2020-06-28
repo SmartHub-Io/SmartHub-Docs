@@ -37,9 +37,6 @@ jobs:
     - name: init docfx
       run: docfx init -q
       
-    - name: build metadata to docs fodler
-      run: docfx metadata docfx_project/docfx.json 
-        
     - name: move solution
       run: |
         mkdir D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src
@@ -50,8 +47,7 @@ jobs:
         
     - name: tes
       run: |
-        ls
-        cd docfx_project/src
+        cd docfx_project\src
         ls
         
     - name: GitHub Pages
