@@ -46,18 +46,12 @@ jobs:
         move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src
       
     - name: build docu
-      run: docfx build docfx_project/docfx.json -o docs
+      run: docfx docfx_project/docfx.json -o docs
         
     - name: tes
       run: |
         ls
-        cd docfx_project
-        ls
-        
-    - name: test
-      run: |
-        ls
-        cd develop
+        cd docfx_project/src
         ls
         
     - name: GitHub Pages
