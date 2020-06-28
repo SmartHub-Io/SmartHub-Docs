@@ -25,11 +25,28 @@ jobs:
         repository: SmartHub-Io/SmartHub
         path: develop
       
-    - uses: nikeee/docfx-action@master
-      name: Build Documentation
+    - name: Chocolatey Action
+      uses: crazy-max/ghaction-chocolatey@v1.2.2
       with:
-        args: docfx.json
+        # Arguments to pass to Chocolatey
+        args: -h
+      
+#    - uses: nikeee/docfx-action@master
+ #     name: Build Documentation
+  #    with:
+   #     args: docfx.json
 
+    - name: isntall docfx
+      run: choco install docfx
+    - name: init
+      run: docfx init -q
+      
+    - name: meta
+      run: docfx metadata docfx_project/docfx.json
+      
+    - name: docs
+      run: docfx build docfx_project/docfx.json -o docs      
+      
     # Publish generated site using GitHub Pages
     - uses: maxheld83/ghpages@master
       name: Publish Documentation on GitHub Pages
