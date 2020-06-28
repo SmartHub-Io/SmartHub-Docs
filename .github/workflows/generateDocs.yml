@@ -56,9 +56,9 @@ jobs:
         # Build directory to deploy
         build_dir: docs/_site
         # The committer name and email address
-        committer: max
+        committer: max maximilian2304@t-online.de
         # The author name and email address
-        author: maximilian2304@t-online.de
+        author: max maximilian2304@t-online.de
         # Commit message
         commit_message: github pages update
     env:
