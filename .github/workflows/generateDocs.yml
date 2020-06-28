@@ -67,3 +67,5 @@ jobs:
         author: maximilian2304@t-online.de
         # Commit message
         commit_message: github pages update
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
