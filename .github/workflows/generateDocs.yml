@@ -25,7 +25,7 @@ jobs:
         repository: SmartHub-Io/SmartHub
         path: develop
         
-    - name: Checkout SmartHub repo
+    - name: Checkout SmartHub-Plugins repo
       uses: actions/checkout@v2
       with:
         repository: SmartHub-Io/SmartHub-Plugins
@@ -53,12 +53,18 @@ jobs:
         move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub\SmartHub.Infrastructure D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src
         move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub\SmartHub.sln D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src
       
+    - name: tes
+      run: |
+        ls
+        cd develop-plugins
+        ls
+      
     - name: move SmartHub-Plugins solution
       run: |
         mkdir D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src-plugins
-        move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub-Plugins\MockPlugin D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src-plugins
-        move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub-Plugins\ShellyPlugin D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src-plugins
-        move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub-Plugins\SmartHub-Plugins.sln D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src-plugins
+        move D:\a\SmartHub-Docs\SmartHub-Docs\develop-plugins\SmartHub-Plugins\MockPlugin D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src-plugins
+        move D:\a\SmartHub-Docs\SmartHub-Docs\develop-plugins\SmartHub-Plugins\ShellyPlugin D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src-plugins
+        move D:\a\SmartHub-Docs\SmartHub-Docs\develop-plugins\SmartHub-Plugins\SmartHub-Plugins.sln D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src-plugins
 
       
     - name: build docu
