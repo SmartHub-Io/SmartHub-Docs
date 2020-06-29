@@ -47,11 +47,11 @@ jobs:
     - name: move SmartHub solution
       run: |
         mkdir D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src
-        move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub\SmartHub.Api D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src
-        move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub\SmartHub.Application D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src
-        move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub\SmartHub.Domain D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src
-        move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub\SmartHub.Infrastructure D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src
-        move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub\SmartHub.sln D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src
+        move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub\SmartHub.Api D:\a\SmartHub-Docs\SmartHub-Docs\docfx_project\src
+        move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub\SmartHub.Application D:\a\SmartHub-Docs\SmartHub-Docs\docfx_project\src
+        move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub\SmartHub.Domain D:\a\SmartHub-Docs\SmartHub-Docs\docfx_project\src
+        move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub\SmartHub.Infrastructure D:\a\SmartHub-Docs\SmartHub-Docs\docfx_project\src
+        move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub\SmartHub.sln D:\a\SmartHub-Docs\SmartHub-Docs\docfx_project\src
       
     - name: tes
       run: |
@@ -61,14 +61,14 @@ jobs:
       
     - name: move SmartHub-Plugins solution
       run: |
-        mkdir D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src-plugins
-        move D:\a\SmartHub-Docs\SmartHub-Docs\develop-plugins\SmartHub-Plugins\MockPlugin D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src-plugins
-        move D:\a\SmartHub-Docs\SmartHub-Docs\develop-plugins\SmartHub-Plugins\ShellyPlugin D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src-plugins
-        move D:\a\SmartHub-Docs\SmartHub-Docs\develop-plugins\SmartHub-Plugins\SmartHub-Plugins.sln D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src-plugins
+        mkdir D:\a\SmartHub-Docs\SmartHub-Docs\docfx_project\src-plugins
+        move D:\a\SmartHub-Docs\SmartHub-Docs\develop-plugins\SmartHub-Plugins\MockPlugin D:\a\SmartHub-Docs\SmartHub-Docs\docfx_project\src-plugins
+        move D:\a\SmartHub-Docs\SmartHub-Docs\develop-plugins\SmartHub-Plugins\ShellyPlugin D:\a\SmartHub-Docs\SmartHub-Docs\docfx_project\src-plugins
+        move D:\a\SmartHub-Docs\SmartHub-Docs\develop-plugins\SmartHub-Plugins\SmartHub-Plugins.sln D:\a\SmartHub-Docs\SmartHub-Docs\docfx_project\src-plugins
 
       
     - name: build docu
-      run: docfx docfx_project/docfx.json -o docs
+      run: docfx docfx_project/docfx.json
         
     - name: tes
       run: |
@@ -81,7 +81,7 @@ jobs:
       with:
         target_branch: gh-pages
         # Build directory to deploy
-        build_dir: docs/_site
+        build_dir: docfx_project\_site
         # Commit message
         commit_message: Documentation update
     env:
