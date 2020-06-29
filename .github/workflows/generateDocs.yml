@@ -24,7 +24,14 @@ jobs:
       with:
         repository: SmartHub-Io/SmartHub
         path: develop
-           
+        
+    - name: Checkout SmartHub repo
+      uses: actions/checkout@v2
+      with:
+        repository: SmartHub-Io/SmartHub-Plugins
+        path: develop-plugins
+        
+        
     - name: Chocolatey Action
       uses: crazy-max/ghaction-chocolatey@v1.2.2
       with:
@@ -37,17 +44,30 @@ jobs:
     - name: init docfx
       run: docfx init -q
       
-    - name: move solution
+    - name: move SmartHub solution
       run: |
         mkdir D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src
-        move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src
+        move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub\SmartHub.Api D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src
+        move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub\SmartHub.Application D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src
+        move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub\SmartHub.Domain D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src
+        move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub\SmartHub.Infrastructure D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src
+        move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub\SmartHub.sln D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src
+      
+    - name: move SmartHub-Plugins solution
+      run: |
+        mkdir D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src-plugins
+        move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub-Plugins\MockPlugin D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src-plugins
+        move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub-Plugins\ShellyPlugin D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src-plugins
+        move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub-Plugins\SmartHub-Plugins.sln D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src-plugins
+
       
     - name: build docu
       run: docfx docfx_project/docfx.json -o docs
         
     - name: tes
       run: |
-        cd docfx_project\src
+        ls
+        cd docfx_project
         ls
         
     - name: GitHub Pages
