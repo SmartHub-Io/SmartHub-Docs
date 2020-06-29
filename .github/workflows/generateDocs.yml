@@ -19,6 +19,10 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+    # Checkout repos   
+    - name: Checkout SmartHub-Docu repo
+      uses: actions/checkout@v2
+            
     - name: Checkout SmartHub repo
       uses: actions/checkout@v2
       with:
@@ -30,8 +34,8 @@ jobs:
       with:
         repository: SmartHub-Io/SmartHub-Plugins
         path: develop-plugins
-        
-        
+
+    # install
     - name: Chocolatey Action
       uses: crazy-max/ghaction-chocolatey@v1.2.2
       with:
@@ -46,7 +50,7 @@ jobs:
         ls
         cd docfx_project
         ls
-            
+    # move needed repo files to build folder
     - name: move SmartHub solution
       run: |
         mkdir D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src
@@ -63,7 +67,7 @@ jobs:
         move D:\a\SmartHub-Docs\SmartHub-Docs\develop-plugins\SmartHub-Plugins\ShellyPlugin D:\a\SmartHub-Docs\SmartHub-Docs\docfx_project\src-plugins
         move D:\a\SmartHub-Docs\SmartHub-Docs\develop-plugins\SmartHub-Plugins\SmartHub-Plugins.sln D:\a\SmartHub-Docs\SmartHub-Docs\docfx_project\src-plugins
 
-      
+    # build  
     - name: build docu
       run: docfx docfx_project/docfx.json
         
@@ -72,7 +76,7 @@ jobs:
         ls
         cd docfx_project
         ls
-        
+    # publish to gihub pages    
     - name: GitHub Pages
       uses: crazy-max/ghaction-github-pages@v2.1.0
       with:
