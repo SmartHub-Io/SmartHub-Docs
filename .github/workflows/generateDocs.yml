@@ -41,6 +41,12 @@ jobs:
     - name: install docfx
       run: choco install docfx
       
+    - name: test
+      run: |
+        ls
+        cd docfx_project
+        ls
+            
     - name: move SmartHub solution
       run: |
         mkdir D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src
@@ -49,12 +55,6 @@ jobs:
         move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub\SmartHub.Domain D:\a\SmartHub-Docs\SmartHub-Docs\docfx_project\src
         move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub\SmartHub.Infrastructure D:\a\SmartHub-Docs\SmartHub-Docs\docfx_project\src
         move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub\SmartHub.sln D:\a\SmartHub-Docs\SmartHub-Docs\docfx_project\src
-      
-    - name: tes
-      run: |
-        ls
-        cd develop-plugins
-        ls
       
     - name: move SmartHub-Plugins solution
       run: |
