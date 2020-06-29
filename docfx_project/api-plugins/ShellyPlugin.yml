@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: ShellyPlugin
+  commentId: N:ShellyPlugin
+  id: ShellyPlugin
+  children:
+  - ShellyPlugin.IShellyBasePlugin
+  - ShellyPlugin.ShellyBasePlugin
+  langs:
+  - csharp
+  - vb
+  name: ShellyPlugin
+  nameWithType: ShellyPlugin
+  fullName: ShellyPlugin
+  type: Namespace
+  assemblies:
+  - ShellyPlugin
+references:
+- uid: ShellyPlugin.IShellyBasePlugin
+  commentId: T:ShellyPlugin.IShellyBasePlugin
+  parent: ShellyPlugin
+  name: IShellyBasePlugin
+  nameWithType: IShellyBasePlugin
+  fullName: ShellyPlugin.IShellyBasePlugin
+- uid: ShellyPlugin.ShellyBasePlugin
+  commentId: T:ShellyPlugin.ShellyBasePlugin
+  name: ShellyBasePlugin
+  nameWithType: ShellyBasePlugin
+  fullName: ShellyPlugin.ShellyBasePlugin
+- uid: ShellyPlugin
+  commentId: N:ShellyPlugin
+  name: ShellyPlugin
+  nameWithType: ShellyPlugin
+  fullName: ShellyPlugin

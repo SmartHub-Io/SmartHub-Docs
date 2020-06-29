@@ -1,0 +1,1726 @@
+### YamlMime:ManagedReference
+items:
+- uid: ShellyPlugin.ShellyBasePlugin
+  commentId: T:ShellyPlugin.ShellyBasePlugin
+  id: ShellyBasePlugin
+  parent: ShellyPlugin
+  children:
+  - ShellyPlugin.ShellyBasePlugin.#ctor
+  - ShellyPlugin.ShellyBasePlugin.AssemblyVersion
+  - ShellyPlugin.ShellyBasePlugin.Color
+  - ShellyPlugin.ShellyBasePlugin.Company
+  - ShellyPlugin.ShellyBasePlugin.CreatedAt
+  - ShellyPlugin.ShellyBasePlugin.Execute
+  - ShellyPlugin.ShellyBasePlugin.ExecuteHttp
+  - ShellyPlugin.ShellyBasePlugin.ExecuteMqtt
+  - ShellyPlugin.ShellyBasePlugin.ExecuteSetting
+  - ShellyPlugin.ShellyBasePlugin.ExecuteToggleLightHttp(System.Boolean)
+  - ShellyPlugin.ShellyBasePlugin.HttpSupport
+  - ShellyPlugin.ShellyBasePlugin.Id
+  - ShellyPlugin.ShellyBasePlugin.ModifiedAt
+  - ShellyPlugin.ShellyBasePlugin.MqttSupport
+  - ShellyPlugin.ShellyBasePlugin.Name
+  - ShellyPlugin.ShellyBasePlugin.Query
+  - ShellyPlugin.ShellyBasePlugin.Reboot
+  - ShellyPlugin.ShellyBasePlugin.Relay
+  - ShellyPlugin.ShellyBasePlugin.Settings
+  - ShellyPlugin.ShellyBasePlugin.SettingsAp
+  - ShellyPlugin.ShellyBasePlugin.SettingsCloud
+  - ShellyPlugin.ShellyBasePlugin.SettingsColor
+  - ShellyPlugin.ShellyBasePlugin.SettingsLogin
+  - ShellyPlugin.ShellyBasePlugin.SettingsRelay
+  - ShellyPlugin.ShellyBasePlugin.SettingsSta
+  - ShellyPlugin.ShellyBasePlugin.SettingsWhite
+  - ShellyPlugin.ShellyBasePlugin.Shelly
+  - ShellyPlugin.ShellyBasePlugin.Status
+  - ShellyPlugin.ShellyBasePlugin.TurnOnOff
+  langs:
+  - csharp
+  - vb
+  name: ShellyBasePlugin
+  nameWithType: ShellyBasePlugin
+  fullName: ShellyPlugin.ShellyBasePlugin
+  type: Class
+  source:
+    remote:
+      path: docfx_project/src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+      branch: master
+      repo: https://github.com/SmartHub-Io/SmartHub-Docs.git
+    id: ShellyBasePlugin
+    path: src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+    startLine: 4
+  assemblies:
+  - ShellyPlugin
+  namespace: ShellyPlugin
+  syntax:
+    content: 'public class ShellyBasePlugin : IShellyBasePlugin, IPlugin'
+    content.vb: >-
+      Public Class ShellyBasePlugin
+
+          Implements IShellyBasePlugin, IPlugin
+  inheritance:
+  - System.Object
+  implements:
+  - ShellyPlugin.IShellyBasePlugin
+  - IPlugin
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: ShellyPlugin.ShellyBasePlugin.Id
+  commentId: P:ShellyPlugin.ShellyBasePlugin.Id
+  id: Id
+  parent: ShellyPlugin.ShellyBasePlugin
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: ShellyBasePlugin.Id
+  fullName: ShellyPlugin.ShellyBasePlugin.Id
+  type: Property
+  source:
+    remote:
+      path: docfx_project/src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+      branch: master
+      repo: https://github.com/SmartHub-Io/SmartHub-Docs.git
+    id: Id
+    path: src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+    startLine: 6
+  assemblies:
+  - ShellyPlugin
+  namespace: ShellyPlugin
+  syntax:
+    content: public string Id { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Id As String
+  overload: ShellyPlugin.ShellyBasePlugin.Id*
+  implements:
+  - ShellyPlugin.IShellyBasePlugin.Id
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ShellyPlugin.ShellyBasePlugin.Name
+  commentId: P:ShellyPlugin.ShellyBasePlugin.Name
+  id: Name
+  parent: ShellyPlugin.ShellyBasePlugin
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ShellyBasePlugin.Name
+  fullName: ShellyPlugin.ShellyBasePlugin.Name
+  type: Property
+  source:
+    remote:
+      path: docfx_project/src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+      branch: master
+      repo: https://github.com/SmartHub-Io/SmartHub-Docs.git
+    id: Name
+    path: src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+    startLine: 7
+  assemblies:
+  - ShellyPlugin
+  namespace: ShellyPlugin
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: ShellyPlugin.ShellyBasePlugin.Name*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ShellyPlugin.ShellyBasePlugin.MqttSupport
+  commentId: P:ShellyPlugin.ShellyBasePlugin.MqttSupport
+  id: MqttSupport
+  parent: ShellyPlugin.ShellyBasePlugin
+  langs:
+  - csharp
+  - vb
+  name: MqttSupport
+  nameWithType: ShellyBasePlugin.MqttSupport
+  fullName: ShellyPlugin.ShellyBasePlugin.MqttSupport
+  type: Property
+  source:
+    remote:
+      path: docfx_project/src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+      branch: master
+      repo: https://github.com/SmartHub-Io/SmartHub-Docs.git
+    id: MqttSupport
+    path: src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+    startLine: 8
+  assemblies:
+  - ShellyPlugin
+  namespace: ShellyPlugin
+  syntax:
+    content: public bool MqttSupport { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property MqttSupport As Boolean
+  overload: ShellyPlugin.ShellyBasePlugin.MqttSupport*
+  implements:
+  - ShellyPlugin.IShellyBasePlugin.MqttSupport
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ShellyPlugin.ShellyBasePlugin.HttpSupport
+  commentId: P:ShellyPlugin.ShellyBasePlugin.HttpSupport
+  id: HttpSupport
+  parent: ShellyPlugin.ShellyBasePlugin
+  langs:
+  - csharp
+  - vb
+  name: HttpSupport
+  nameWithType: ShellyBasePlugin.HttpSupport
+  fullName: ShellyPlugin.ShellyBasePlugin.HttpSupport
+  type: Property
+  source:
+    remote:
+      path: docfx_project/src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+      branch: master
+      repo: https://github.com/SmartHub-Io/SmartHub-Docs.git
+    id: HttpSupport
+    path: src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+    startLine: 9
+  assemblies:
+  - ShellyPlugin
+  namespace: ShellyPlugin
+  syntax:
+    content: public bool HttpSupport { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property HttpSupport As Boolean
+  overload: ShellyPlugin.ShellyBasePlugin.HttpSupport*
+  implements:
+  - ShellyPlugin.IShellyBasePlugin.HttpSupport
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ShellyPlugin.ShellyBasePlugin.Company
+  commentId: P:ShellyPlugin.ShellyBasePlugin.Company
+  id: Company
+  parent: ShellyPlugin.ShellyBasePlugin
+  langs:
+  - csharp
+  - vb
+  name: Company
+  nameWithType: ShellyBasePlugin.Company
+  fullName: ShellyPlugin.ShellyBasePlugin.Company
+  type: Property
+  source:
+    remote:
+      path: docfx_project/src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+      branch: master
+      repo: https://github.com/SmartHub-Io/SmartHub-Docs.git
+    id: Company
+    path: src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+    startLine: 11
+  assemblies:
+  - ShellyPlugin
+  namespace: ShellyPlugin
+  syntax:
+    content: public string Company { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Company As String
+  overload: ShellyPlugin.ShellyBasePlugin.Company*
+  implements:
+  - ShellyPlugin.IShellyBasePlugin.Company
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ShellyPlugin.ShellyBasePlugin.AssemblyVersion
+  commentId: P:ShellyPlugin.ShellyBasePlugin.AssemblyVersion
+  id: AssemblyVersion
+  parent: ShellyPlugin.ShellyBasePlugin
+  langs:
+  - csharp
+  - vb
+  name: AssemblyVersion
+  nameWithType: ShellyBasePlugin.AssemblyVersion
+  fullName: ShellyPlugin.ShellyBasePlugin.AssemblyVersion
+  type: Property
+  source:
+    remote:
+      path: docfx_project/src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+      branch: master
+      repo: https://github.com/SmartHub-Io/SmartHub-Docs.git
+    id: AssemblyVersion
+    path: src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+    startLine: 13
+  assemblies:
+  - ShellyPlugin
+  namespace: ShellyPlugin
+  syntax:
+    content: public double AssemblyVersion { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property AssemblyVersion As Double
+  overload: ShellyPlugin.ShellyBasePlugin.AssemblyVersion*
+  implements:
+  - ShellyPlugin.IShellyBasePlugin.AssemblyVersion
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ShellyPlugin.ShellyBasePlugin.Query
+  commentId: P:ShellyPlugin.ShellyBasePlugin.Query
+  id: Query
+  parent: ShellyPlugin.ShellyBasePlugin
+  langs:
+  - csharp
+  - vb
+  name: Query
+  nameWithType: ShellyBasePlugin.Query
+  fullName: ShellyPlugin.ShellyBasePlugin.Query
+  type: Property
+  source:
+    remote:
+      path: docfx_project/src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+      branch: master
+      repo: https://github.com/SmartHub-Io/SmartHub-Docs.git
+    id: Query
+    path: src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+    startLine: 14
+  assemblies:
+  - ShellyPlugin
+  namespace: ShellyPlugin
+  syntax:
+    content: public string Query { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Query As String
+  overload: ShellyPlugin.ShellyBasePlugin.Query*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ShellyPlugin.ShellyBasePlugin.ModifiedAt
+  commentId: P:ShellyPlugin.ShellyBasePlugin.ModifiedAt
+  id: ModifiedAt
+  parent: ShellyPlugin.ShellyBasePlugin
+  langs:
+  - csharp
+  - vb
+  name: ModifiedAt
+  nameWithType: ShellyBasePlugin.ModifiedAt
+  fullName: ShellyPlugin.ShellyBasePlugin.ModifiedAt
+  type: Property
+  source:
+    remote:
+      path: docfx_project/src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+      branch: master
+      repo: https://github.com/SmartHub-Io/SmartHub-Docs.git
+    id: ModifiedAt
+    path: src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+    startLine: 16
+  assemblies:
+  - ShellyPlugin
+  namespace: ShellyPlugin
+  syntax:
+    content: public DateTime ModifiedAt { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property ModifiedAt As Date
+  overload: ShellyPlugin.ShellyBasePlugin.ModifiedAt*
+  implements:
+  - ShellyPlugin.IShellyBasePlugin.ModifiedAt
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ShellyPlugin.ShellyBasePlugin.CreatedAt
+  commentId: P:ShellyPlugin.ShellyBasePlugin.CreatedAt
+  id: CreatedAt
+  parent: ShellyPlugin.ShellyBasePlugin
+  langs:
+  - csharp
+  - vb
+  name: CreatedAt
+  nameWithType: ShellyBasePlugin.CreatedAt
+  fullName: ShellyPlugin.ShellyBasePlugin.CreatedAt
+  type: Property
+  source:
+    remote:
+      path: docfx_project/src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+      branch: master
+      repo: https://github.com/SmartHub-Io/SmartHub-Docs.git
+    id: CreatedAt
+    path: src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+    startLine: 18
+  assemblies:
+  - ShellyPlugin
+  namespace: ShellyPlugin
+  syntax:
+    content: public DateTime CreatedAt { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property CreatedAt As Date
+  overload: ShellyPlugin.ShellyBasePlugin.CreatedAt*
+  implements:
+  - ShellyPlugin.IShellyBasePlugin.CreatedAt
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ShellyPlugin.ShellyBasePlugin.Shelly
+  commentId: P:ShellyPlugin.ShellyBasePlugin.Shelly
+  id: Shelly
+  parent: ShellyPlugin.ShellyBasePlugin
+  langs:
+  - csharp
+  - vb
+  name: Shelly
+  nameWithType: ShellyBasePlugin.Shelly
+  fullName: ShellyPlugin.ShellyBasePlugin.Shelly
+  type: Property
+  source:
+    remote:
+      path: docfx_project/src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+      branch: master
+      repo: https://github.com/SmartHub-Io/SmartHub-Docs.git
+    id: Shelly
+    path: src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+    startLine: 23
+  assemblies:
+  - ShellyPlugin
+  namespace: ShellyPlugin
+  syntax:
+    content: public string Shelly { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Shelly As String
+  overload: ShellyPlugin.ShellyBasePlugin.Shelly*
+  implements:
+  - ShellyPlugin.IShellyBasePlugin.Shelly
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ShellyPlugin.ShellyBasePlugin.Settings
+  commentId: P:ShellyPlugin.ShellyBasePlugin.Settings
+  id: Settings
+  parent: ShellyPlugin.ShellyBasePlugin
+  langs:
+  - csharp
+  - vb
+  name: Settings
+  nameWithType: ShellyBasePlugin.Settings
+  fullName: ShellyPlugin.ShellyBasePlugin.Settings
+  type: Property
+  source:
+    remote:
+      path: docfx_project/src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+      branch: master
+      repo: https://github.com/SmartHub-Io/SmartHub-Docs.git
+    id: Settings
+    path: src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+    startLine: 25
+  assemblies:
+  - ShellyPlugin
+  namespace: ShellyPlugin
+  syntax:
+    content: public string Settings { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Settings As String
+  overload: ShellyPlugin.ShellyBasePlugin.Settings*
+  implements:
+  - ShellyPlugin.IShellyBasePlugin.Settings
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ShellyPlugin.ShellyBasePlugin.SettingsAp
+  commentId: P:ShellyPlugin.ShellyBasePlugin.SettingsAp
+  id: SettingsAp
+  parent: ShellyPlugin.ShellyBasePlugin
+  langs:
+  - csharp
+  - vb
+  name: SettingsAp
+  nameWithType: ShellyBasePlugin.SettingsAp
+  fullName: ShellyPlugin.ShellyBasePlugin.SettingsAp
+  type: Property
+  source:
+    remote:
+      path: docfx_project/src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+      branch: master
+      repo: https://github.com/SmartHub-Io/SmartHub-Docs.git
+    id: SettingsAp
+    path: src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+    startLine: 26
+  assemblies:
+  - ShellyPlugin
+  namespace: ShellyPlugin
+  syntax:
+    content: public string SettingsAp { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SettingsAp As String
+  overload: ShellyPlugin.ShellyBasePlugin.SettingsAp*
+  implements:
+  - ShellyPlugin.IShellyBasePlugin.SettingsAp
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ShellyPlugin.ShellyBasePlugin.SettingsSta
+  commentId: P:ShellyPlugin.ShellyBasePlugin.SettingsSta
+  id: SettingsSta
+  parent: ShellyPlugin.ShellyBasePlugin
+  langs:
+  - csharp
+  - vb
+  name: SettingsSta
+  nameWithType: ShellyBasePlugin.SettingsSta
+  fullName: ShellyPlugin.ShellyBasePlugin.SettingsSta
+  type: Property
+  source:
+    remote:
+      path: docfx_project/src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+      branch: master
+      repo: https://github.com/SmartHub-Io/SmartHub-Docs.git
+    id: SettingsSta
+    path: src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+    startLine: 27
+  assemblies:
+  - ShellyPlugin
+  namespace: ShellyPlugin
+  syntax:
+    content: public string SettingsSta { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SettingsSta As String
+  overload: ShellyPlugin.ShellyBasePlugin.SettingsSta*
+  implements:
+  - ShellyPlugin.IShellyBasePlugin.SettingsSta
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ShellyPlugin.ShellyBasePlugin.SettingsLogin
+  commentId: P:ShellyPlugin.ShellyBasePlugin.SettingsLogin
+  id: SettingsLogin
+  parent: ShellyPlugin.ShellyBasePlugin
+  langs:
+  - csharp
+  - vb
+  name: SettingsLogin
+  nameWithType: ShellyBasePlugin.SettingsLogin
+  fullName: ShellyPlugin.ShellyBasePlugin.SettingsLogin
+  type: Property
+  source:
+    remote:
+      path: docfx_project/src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+      branch: master
+      repo: https://github.com/SmartHub-Io/SmartHub-Docs.git
+    id: SettingsLogin
+    path: src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+    startLine: 30
+  assemblies:
+  - ShellyPlugin
+  namespace: ShellyPlugin
+  syntax:
+    content: public string SettingsLogin { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SettingsLogin As String
+  overload: ShellyPlugin.ShellyBasePlugin.SettingsLogin*
+  implements:
+  - ShellyPlugin.IShellyBasePlugin.SettingsLogin
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ShellyPlugin.ShellyBasePlugin.SettingsCloud
+  commentId: P:ShellyPlugin.ShellyBasePlugin.SettingsCloud
+  id: SettingsCloud
+  parent: ShellyPlugin.ShellyBasePlugin
+  langs:
+  - csharp
+  - vb
+  name: SettingsCloud
+  nameWithType: ShellyBasePlugin.SettingsCloud
+  fullName: ShellyPlugin.ShellyBasePlugin.SettingsCloud
+  type: Property
+  source:
+    remote:
+      path: docfx_project/src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+      branch: master
+      repo: https://github.com/SmartHub-Io/SmartHub-Docs.git
+    id: SettingsCloud
+    path: src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+    startLine: 32
+  assemblies:
+  - ShellyPlugin
+  namespace: ShellyPlugin
+  syntax:
+    content: public string SettingsCloud { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SettingsCloud As String
+  overload: ShellyPlugin.ShellyBasePlugin.SettingsCloud*
+  implements:
+  - ShellyPlugin.IShellyBasePlugin.SettingsCloud
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ShellyPlugin.ShellyBasePlugin.Status
+  commentId: P:ShellyPlugin.ShellyBasePlugin.Status
+  id: Status
+  parent: ShellyPlugin.ShellyBasePlugin
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: ShellyBasePlugin.Status
+  fullName: ShellyPlugin.ShellyBasePlugin.Status
+  type: Property
+  source:
+    remote:
+      path: docfx_project/src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+      branch: master
+      repo: https://github.com/SmartHub-Io/SmartHub-Docs.git
+    id: Status
+    path: src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+    startLine: 34
+  assemblies:
+  - ShellyPlugin
+  namespace: ShellyPlugin
+  syntax:
+    content: public string Status { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Status As String
+  overload: ShellyPlugin.ShellyBasePlugin.Status*
+  implements:
+  - ShellyPlugin.IShellyBasePlugin.Status
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ShellyPlugin.ShellyBasePlugin.Reboot
+  commentId: P:ShellyPlugin.ShellyBasePlugin.Reboot
+  id: Reboot
+  parent: ShellyPlugin.ShellyBasePlugin
+  langs:
+  - csharp
+  - vb
+  name: Reboot
+  nameWithType: ShellyBasePlugin.Reboot
+  fullName: ShellyPlugin.ShellyBasePlugin.Reboot
+  type: Property
+  source:
+    remote:
+      path: docfx_project/src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+      branch: master
+      repo: https://github.com/SmartHub-Io/SmartHub-Docs.git
+    id: Reboot
+    path: src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+    startLine: 35
+  assemblies:
+  - ShellyPlugin
+  namespace: ShellyPlugin
+  syntax:
+    content: public string Reboot { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Reboot As String
+  overload: ShellyPlugin.ShellyBasePlugin.Reboot*
+  implements:
+  - ShellyPlugin.IShellyBasePlugin.Reboot
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ShellyPlugin.ShellyBasePlugin.TurnOnOff
+  commentId: P:ShellyPlugin.ShellyBasePlugin.TurnOnOff
+  id: TurnOnOff
+  parent: ShellyPlugin.ShellyBasePlugin
+  langs:
+  - csharp
+  - vb
+  name: TurnOnOff
+  nameWithType: ShellyBasePlugin.TurnOnOff
+  fullName: ShellyPlugin.ShellyBasePlugin.TurnOnOff
+  type: Property
+  source:
+    remote:
+      path: docfx_project/src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+      branch: master
+      repo: https://github.com/SmartHub-Io/SmartHub-Docs.git
+    id: TurnOnOff
+    path: src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+    startLine: 36
+  assemblies:
+  - ShellyPlugin
+  namespace: ShellyPlugin
+  syntax:
+    content: public string TurnOnOff { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TurnOnOff As String
+  overload: ShellyPlugin.ShellyBasePlugin.TurnOnOff*
+  implements:
+  - ShellyPlugin.IShellyBasePlugin.TurnOnOff
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ShellyPlugin.ShellyBasePlugin.SettingsRelay
+  commentId: P:ShellyPlugin.ShellyBasePlugin.SettingsRelay
+  id: SettingsRelay
+  parent: ShellyPlugin.ShellyBasePlugin
+  langs:
+  - csharp
+  - vb
+  name: SettingsRelay
+  nameWithType: ShellyBasePlugin.SettingsRelay
+  fullName: ShellyPlugin.ShellyBasePlugin.SettingsRelay
+  type: Property
+  source:
+    remote:
+      path: docfx_project/src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+      branch: master
+      repo: https://github.com/SmartHub-Io/SmartHub-Docs.git
+    id: SettingsRelay
+    path: src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+    startLine: 39
+  assemblies:
+  - ShellyPlugin
+  namespace: ShellyPlugin
+  syntax:
+    content: public string SettingsRelay { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SettingsRelay As String
+  overload: ShellyPlugin.ShellyBasePlugin.SettingsRelay*
+  implements:
+  - ShellyPlugin.IShellyBasePlugin.SettingsRelay
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ShellyPlugin.ShellyBasePlugin.Relay
+  commentId: P:ShellyPlugin.ShellyBasePlugin.Relay
+  id: Relay
+  parent: ShellyPlugin.ShellyBasePlugin
+  langs:
+  - csharp
+  - vb
+  name: Relay
+  nameWithType: ShellyBasePlugin.Relay
+  fullName: ShellyPlugin.ShellyBasePlugin.Relay
+  type: Property
+  source:
+    remote:
+      path: docfx_project/src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+      branch: master
+      repo: https://github.com/SmartHub-Io/SmartHub-Docs.git
+    id: Relay
+    path: src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+    startLine: 41
+  assemblies:
+  - ShellyPlugin
+  namespace: ShellyPlugin
+  syntax:
+    content: public string Relay { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Relay As String
+  overload: ShellyPlugin.ShellyBasePlugin.Relay*
+  implements:
+  - ShellyPlugin.IShellyBasePlugin.Relay
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ShellyPlugin.ShellyBasePlugin.SettingsColor
+  commentId: P:ShellyPlugin.ShellyBasePlugin.SettingsColor
+  id: SettingsColor
+  parent: ShellyPlugin.ShellyBasePlugin
+  langs:
+  - csharp
+  - vb
+  name: SettingsColor
+  nameWithType: ShellyBasePlugin.SettingsColor
+  fullName: ShellyPlugin.ShellyBasePlugin.SettingsColor
+  type: Property
+  source:
+    remote:
+      path: docfx_project/src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+      branch: master
+      repo: https://github.com/SmartHub-Io/SmartHub-Docs.git
+    id: SettingsColor
+    path: src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+    startLine: 44
+  assemblies:
+  - ShellyPlugin
+  namespace: ShellyPlugin
+  syntax:
+    content: public string SettingsColor { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SettingsColor As String
+  overload: ShellyPlugin.ShellyBasePlugin.SettingsColor*
+  implements:
+  - ShellyPlugin.IShellyBasePlugin.SettingsColor
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ShellyPlugin.ShellyBasePlugin.SettingsWhite
+  commentId: P:ShellyPlugin.ShellyBasePlugin.SettingsWhite
+  id: SettingsWhite
+  parent: ShellyPlugin.ShellyBasePlugin
+  langs:
+  - csharp
+  - vb
+  name: SettingsWhite
+  nameWithType: ShellyBasePlugin.SettingsWhite
+  fullName: ShellyPlugin.ShellyBasePlugin.SettingsWhite
+  type: Property
+  source:
+    remote:
+      path: docfx_project/src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+      branch: master
+      repo: https://github.com/SmartHub-Io/SmartHub-Docs.git
+    id: SettingsWhite
+    path: src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+    startLine: 46
+  assemblies:
+  - ShellyPlugin
+  namespace: ShellyPlugin
+  syntax:
+    content: public string SettingsWhite { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SettingsWhite As String
+  overload: ShellyPlugin.ShellyBasePlugin.SettingsWhite*
+  implements:
+  - ShellyPlugin.IShellyBasePlugin.SettingsWhite
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ShellyPlugin.ShellyBasePlugin.Color
+  commentId: P:ShellyPlugin.ShellyBasePlugin.Color
+  id: Color
+  parent: ShellyPlugin.ShellyBasePlugin
+  langs:
+  - csharp
+  - vb
+  name: Color
+  nameWithType: ShellyBasePlugin.Color
+  fullName: ShellyPlugin.ShellyBasePlugin.Color
+  type: Property
+  source:
+    remote:
+      path: docfx_project/src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+      branch: master
+      repo: https://github.com/SmartHub-Io/SmartHub-Docs.git
+    id: Color
+    path: src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+    startLine: 49
+  assemblies:
+  - ShellyPlugin
+  namespace: ShellyPlugin
+  syntax:
+    content: public string Color { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Color As String
+  overload: ShellyPlugin.ShellyBasePlugin.Color*
+  implements:
+  - ShellyPlugin.IShellyBasePlugin.Color
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ShellyPlugin.ShellyBasePlugin.#ctor
+  commentId: M:ShellyPlugin.ShellyBasePlugin.#ctor
+  id: '#ctor'
+  parent: ShellyPlugin.ShellyBasePlugin
+  langs:
+  - csharp
+  - vb
+  name: ShellyBasePlugin()
+  nameWithType: ShellyBasePlugin.ShellyBasePlugin()
+  fullName: ShellyPlugin.ShellyBasePlugin.ShellyBasePlugin()
+  type: Constructor
+  source:
+    remote:
+      path: docfx_project/src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+      branch: master
+      repo: https://github.com/SmartHub-Io/SmartHub-Docs.git
+    id: .ctor
+    path: src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+    startLine: 58
+  assemblies:
+  - ShellyPlugin
+  namespace: ShellyPlugin
+  syntax:
+    content: public ShellyBasePlugin()
+    content.vb: Public Sub New
+  overload: ShellyPlugin.ShellyBasePlugin.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ShellyPlugin.ShellyBasePlugin.Execute
+  commentId: M:ShellyPlugin.ShellyBasePlugin.Execute
+  id: Execute
+  parent: ShellyPlugin.ShellyBasePlugin
+  langs:
+  - csharp
+  - vb
+  name: Execute()
+  nameWithType: ShellyBasePlugin.Execute()
+  fullName: ShellyPlugin.ShellyBasePlugin.Execute()
+  type: Method
+  source:
+    remote:
+      path: docfx_project/src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+      branch: master
+      repo: https://github.com/SmartHub-Io/SmartHub-Docs.git
+    id: Execute
+    path: src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+    startLine: 62
+  assemblies:
+  - ShellyPlugin
+  namespace: ShellyPlugin
+  syntax:
+    content: public void Execute()
+    content.vb: Public Sub Execute
+  overload: ShellyPlugin.ShellyBasePlugin.Execute*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ShellyPlugin.ShellyBasePlugin.ExecuteHttp
+  commentId: M:ShellyPlugin.ShellyBasePlugin.ExecuteHttp
+  id: ExecuteHttp
+  parent: ShellyPlugin.ShellyBasePlugin
+  langs:
+  - csharp
+  - vb
+  name: ExecuteHttp()
+  nameWithType: ShellyBasePlugin.ExecuteHttp()
+  fullName: ShellyPlugin.ShellyBasePlugin.ExecuteHttp()
+  type: Method
+  source:
+    remote:
+      path: docfx_project/src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+      branch: master
+      repo: https://github.com/SmartHub-Io/SmartHub-Docs.git
+    id: ExecuteHttp
+    path: src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+    startLine: 67
+  assemblies:
+  - ShellyPlugin
+  namespace: ShellyPlugin
+  syntax:
+    content: public string ExecuteHttp()
+    return:
+      type: System.String
+    content.vb: Public Function ExecuteHttp As String
+  overload: ShellyPlugin.ShellyBasePlugin.ExecuteHttp*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ShellyPlugin.ShellyBasePlugin.ExecuteToggleLightHttp(System.Boolean)
+  commentId: M:ShellyPlugin.ShellyBasePlugin.ExecuteToggleLightHttp(System.Boolean)
+  id: ExecuteToggleLightHttp(System.Boolean)
+  parent: ShellyPlugin.ShellyBasePlugin
+  langs:
+  - csharp
+  - vb
+  name: ExecuteToggleLightHttp(Boolean)
+  nameWithType: ShellyBasePlugin.ExecuteToggleLightHttp(Boolean)
+  fullName: ShellyPlugin.ShellyBasePlugin.ExecuteToggleLightHttp(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: docfx_project/src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+      branch: master
+      repo: https://github.com/SmartHub-Io/SmartHub-Docs.git
+    id: ExecuteToggleLightHttp
+    path: src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+    startLine: 72
+  assemblies:
+  - ShellyPlugin
+  namespace: ShellyPlugin
+  syntax:
+    content: public string ExecuteToggleLightHttp(bool on)
+    parameters:
+    - id: on
+      type: System.Boolean
+    return:
+      type: System.String
+    content.vb: Public Function ExecuteToggleLightHttp(on As Boolean) As String
+  overload: ShellyPlugin.ShellyBasePlugin.ExecuteToggleLightHttp*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ShellyPlugin.ShellyBasePlugin.ExecuteMqtt
+  commentId: M:ShellyPlugin.ShellyBasePlugin.ExecuteMqtt
+  id: ExecuteMqtt
+  parent: ShellyPlugin.ShellyBasePlugin
+  langs:
+  - csharp
+  - vb
+  name: ExecuteMqtt()
+  nameWithType: ShellyBasePlugin.ExecuteMqtt()
+  fullName: ShellyPlugin.ShellyBasePlugin.ExecuteMqtt()
+  type: Method
+  source:
+    remote:
+      path: docfx_project/src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+      branch: master
+      repo: https://github.com/SmartHub-Io/SmartHub-Docs.git
+    id: ExecuteMqtt
+    path: src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+    startLine: 77
+  assemblies:
+  - ShellyPlugin
+  namespace: ShellyPlugin
+  syntax:
+    content: public string ExecuteMqtt()
+    return:
+      type: System.String
+    content.vb: Public Function ExecuteMqtt As String
+  overload: ShellyPlugin.ShellyBasePlugin.ExecuteMqtt*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ShellyPlugin.ShellyBasePlugin.ExecuteSetting
+  commentId: M:ShellyPlugin.ShellyBasePlugin.ExecuteSetting
+  id: ExecuteSetting
+  parent: ShellyPlugin.ShellyBasePlugin
+  langs:
+  - csharp
+  - vb
+  name: ExecuteSetting()
+  nameWithType: ShellyBasePlugin.ExecuteSetting()
+  fullName: ShellyPlugin.ShellyBasePlugin.ExecuteSetting()
+  type: Method
+  source:
+    remote:
+      path: docfx_project/src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+      branch: master
+      repo: https://github.com/SmartHub-Io/SmartHub-Docs.git
+    id: ExecuteSetting
+    path: src-plugins/ShellyPlugin/ShellyBasePlugin.cs
+    startLine: 82
+  assemblies:
+  - ShellyPlugin
+  namespace: ShellyPlugin
+  syntax:
+    content: public string ExecuteSetting()
+    return:
+      type: System.String
+    content.vb: Public Function ExecuteSetting As String
+  overload: ShellyPlugin.ShellyBasePlugin.ExecuteSetting*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: ShellyPlugin
+  commentId: N:ShellyPlugin
+  name: ShellyPlugin
+  nameWithType: ShellyPlugin
+  fullName: ShellyPlugin
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: ShellyPlugin.IShellyBasePlugin
+  commentId: T:ShellyPlugin.IShellyBasePlugin
+  parent: ShellyPlugin
+  name: IShellyBasePlugin
+  nameWithType: IShellyBasePlugin
+  fullName: ShellyPlugin.IShellyBasePlugin
+- uid: IPlugin
+  commentId: '!:IPlugin'
+  isExternal: true
+  name: IPlugin
+  nameWithType: IPlugin
+  fullName: IPlugin
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ShellyPlugin.ShellyBasePlugin.Id*
+  commentId: Overload:ShellyPlugin.ShellyBasePlugin.Id
+  name: Id
+  nameWithType: ShellyBasePlugin.Id
+  fullName: ShellyPlugin.ShellyBasePlugin.Id
+- uid: ShellyPlugin.IShellyBasePlugin.Id
+  commentId: P:ShellyPlugin.IShellyBasePlugin.Id
+  parent: ShellyPlugin.IShellyBasePlugin
+  name: Id
+  nameWithType: IShellyBasePlugin.Id
+  fullName: ShellyPlugin.IShellyBasePlugin.Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: ShellyPlugin.ShellyBasePlugin.Name*
+  commentId: Overload:ShellyPlugin.ShellyBasePlugin.Name
+  name: Name
+  nameWithType: ShellyBasePlugin.Name
+  fullName: ShellyPlugin.ShellyBasePlugin.Name
+- uid: ShellyPlugin.ShellyBasePlugin.MqttSupport*
+  commentId: Overload:ShellyPlugin.ShellyBasePlugin.MqttSupport
+  name: MqttSupport
+  nameWithType: ShellyBasePlugin.MqttSupport
+  fullName: ShellyPlugin.ShellyBasePlugin.MqttSupport
+- uid: ShellyPlugin.IShellyBasePlugin.MqttSupport
+  commentId: P:ShellyPlugin.IShellyBasePlugin.MqttSupport
+  parent: ShellyPlugin.IShellyBasePlugin
+  name: MqttSupport
+  nameWithType: IShellyBasePlugin.MqttSupport
+  fullName: ShellyPlugin.IShellyBasePlugin.MqttSupport
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: ShellyPlugin.ShellyBasePlugin.HttpSupport*
+  commentId: Overload:ShellyPlugin.ShellyBasePlugin.HttpSupport
+  name: HttpSupport
+  nameWithType: ShellyBasePlugin.HttpSupport
+  fullName: ShellyPlugin.ShellyBasePlugin.HttpSupport
+- uid: ShellyPlugin.IShellyBasePlugin.HttpSupport
+  commentId: P:ShellyPlugin.IShellyBasePlugin.HttpSupport
+  parent: ShellyPlugin.IShellyBasePlugin
+  name: HttpSupport
+  nameWithType: IShellyBasePlugin.HttpSupport
+  fullName: ShellyPlugin.IShellyBasePlugin.HttpSupport
+- uid: ShellyPlugin.ShellyBasePlugin.Company*
+  commentId: Overload:ShellyPlugin.ShellyBasePlugin.Company
+  name: Company
+  nameWithType: ShellyBasePlugin.Company
+  fullName: ShellyPlugin.ShellyBasePlugin.Company
+- uid: ShellyPlugin.IShellyBasePlugin.Company
+  commentId: P:ShellyPlugin.IShellyBasePlugin.Company
+  parent: ShellyPlugin.IShellyBasePlugin
+  name: Company
+  nameWithType: IShellyBasePlugin.Company
+  fullName: ShellyPlugin.IShellyBasePlugin.Company
+- uid: ShellyPlugin.ShellyBasePlugin.AssemblyVersion*
+  commentId: Overload:ShellyPlugin.ShellyBasePlugin.AssemblyVersion
+  name: AssemblyVersion
+  nameWithType: ShellyBasePlugin.AssemblyVersion
+  fullName: ShellyPlugin.ShellyBasePlugin.AssemblyVersion
+- uid: ShellyPlugin.IShellyBasePlugin.AssemblyVersion
+  commentId: P:ShellyPlugin.IShellyBasePlugin.AssemblyVersion
+  parent: ShellyPlugin.IShellyBasePlugin
+  name: AssemblyVersion
+  nameWithType: IShellyBasePlugin.AssemblyVersion
+  fullName: ShellyPlugin.IShellyBasePlugin.AssemblyVersion
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: ShellyPlugin.ShellyBasePlugin.Query*
+  commentId: Overload:ShellyPlugin.ShellyBasePlugin.Query
+  name: Query
+  nameWithType: ShellyBasePlugin.Query
+  fullName: ShellyPlugin.ShellyBasePlugin.Query
+- uid: ShellyPlugin.ShellyBasePlugin.ModifiedAt*
+  commentId: Overload:ShellyPlugin.ShellyBasePlugin.ModifiedAt
+  name: ModifiedAt
+  nameWithType: ShellyBasePlugin.ModifiedAt
+  fullName: ShellyPlugin.ShellyBasePlugin.ModifiedAt
+- uid: ShellyPlugin.IShellyBasePlugin.ModifiedAt
+  commentId: P:ShellyPlugin.IShellyBasePlugin.ModifiedAt
+  parent: ShellyPlugin.IShellyBasePlugin
+  name: ModifiedAt
+  nameWithType: IShellyBasePlugin.ModifiedAt
+  fullName: ShellyPlugin.IShellyBasePlugin.ModifiedAt
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: ShellyPlugin.ShellyBasePlugin.CreatedAt*
+  commentId: Overload:ShellyPlugin.ShellyBasePlugin.CreatedAt
+  name: CreatedAt
+  nameWithType: ShellyBasePlugin.CreatedAt
+  fullName: ShellyPlugin.ShellyBasePlugin.CreatedAt
+- uid: ShellyPlugin.IShellyBasePlugin.CreatedAt
+  commentId: P:ShellyPlugin.IShellyBasePlugin.CreatedAt
+  parent: ShellyPlugin.IShellyBasePlugin
+  name: CreatedAt
+  nameWithType: IShellyBasePlugin.CreatedAt
+  fullName: ShellyPlugin.IShellyBasePlugin.CreatedAt
+- uid: ShellyPlugin.ShellyBasePlugin.Shelly*
+  commentId: Overload:ShellyPlugin.ShellyBasePlugin.Shelly
+  name: Shelly
+  nameWithType: ShellyBasePlugin.Shelly
+  fullName: ShellyPlugin.ShellyBasePlugin.Shelly
+- uid: ShellyPlugin.IShellyBasePlugin.Shelly
+  commentId: P:ShellyPlugin.IShellyBasePlugin.Shelly
+  parent: ShellyPlugin.IShellyBasePlugin
+  name: Shelly
+  nameWithType: IShellyBasePlugin.Shelly
+  fullName: ShellyPlugin.IShellyBasePlugin.Shelly
+- uid: ShellyPlugin.ShellyBasePlugin.Settings*
+  commentId: Overload:ShellyPlugin.ShellyBasePlugin.Settings
+  name: Settings
+  nameWithType: ShellyBasePlugin.Settings
+  fullName: ShellyPlugin.ShellyBasePlugin.Settings
+- uid: ShellyPlugin.IShellyBasePlugin.Settings
+  commentId: P:ShellyPlugin.IShellyBasePlugin.Settings
+  parent: ShellyPlugin.IShellyBasePlugin
+  name: Settings
+  nameWithType: IShellyBasePlugin.Settings
+  fullName: ShellyPlugin.IShellyBasePlugin.Settings
+- uid: ShellyPlugin.ShellyBasePlugin.SettingsAp*
+  commentId: Overload:ShellyPlugin.ShellyBasePlugin.SettingsAp
+  name: SettingsAp
+  nameWithType: ShellyBasePlugin.SettingsAp
+  fullName: ShellyPlugin.ShellyBasePlugin.SettingsAp
+- uid: ShellyPlugin.IShellyBasePlugin.SettingsAp
+  commentId: P:ShellyPlugin.IShellyBasePlugin.SettingsAp
+  parent: ShellyPlugin.IShellyBasePlugin
+  name: SettingsAp
+  nameWithType: IShellyBasePlugin.SettingsAp
+  fullName: ShellyPlugin.IShellyBasePlugin.SettingsAp
+- uid: ShellyPlugin.ShellyBasePlugin.SettingsSta*
+  commentId: Overload:ShellyPlugin.ShellyBasePlugin.SettingsSta
+  name: SettingsSta
+  nameWithType: ShellyBasePlugin.SettingsSta
+  fullName: ShellyPlugin.ShellyBasePlugin.SettingsSta
+- uid: ShellyPlugin.IShellyBasePlugin.SettingsSta
+  commentId: P:ShellyPlugin.IShellyBasePlugin.SettingsSta
+  parent: ShellyPlugin.IShellyBasePlugin
+  name: SettingsSta
+  nameWithType: IShellyBasePlugin.SettingsSta
+  fullName: ShellyPlugin.IShellyBasePlugin.SettingsSta
+- uid: ShellyPlugin.ShellyBasePlugin.SettingsLogin*
+  commentId: Overload:ShellyPlugin.ShellyBasePlugin.SettingsLogin
+  name: SettingsLogin
+  nameWithType: ShellyBasePlugin.SettingsLogin
+  fullName: ShellyPlugin.ShellyBasePlugin.SettingsLogin
+- uid: ShellyPlugin.IShellyBasePlugin.SettingsLogin
+  commentId: P:ShellyPlugin.IShellyBasePlugin.SettingsLogin
+  parent: ShellyPlugin.IShellyBasePlugin
+  name: SettingsLogin
+  nameWithType: IShellyBasePlugin.SettingsLogin
+  fullName: ShellyPlugin.IShellyBasePlugin.SettingsLogin
+- uid: ShellyPlugin.ShellyBasePlugin.SettingsCloud*
+  commentId: Overload:ShellyPlugin.ShellyBasePlugin.SettingsCloud
+  name: SettingsCloud
+  nameWithType: ShellyBasePlugin.SettingsCloud
+  fullName: ShellyPlugin.ShellyBasePlugin.SettingsCloud
+- uid: ShellyPlugin.IShellyBasePlugin.SettingsCloud
+  commentId: P:ShellyPlugin.IShellyBasePlugin.SettingsCloud
+  parent: ShellyPlugin.IShellyBasePlugin
+  name: SettingsCloud
+  nameWithType: IShellyBasePlugin.SettingsCloud
+  fullName: ShellyPlugin.IShellyBasePlugin.SettingsCloud
+- uid: ShellyPlugin.ShellyBasePlugin.Status*
+  commentId: Overload:ShellyPlugin.ShellyBasePlugin.Status
+  name: Status
+  nameWithType: ShellyBasePlugin.Status
+  fullName: ShellyPlugin.ShellyBasePlugin.Status
+- uid: ShellyPlugin.IShellyBasePlugin.Status
+  commentId: P:ShellyPlugin.IShellyBasePlugin.Status
+  parent: ShellyPlugin.IShellyBasePlugin
+  name: Status
+  nameWithType: IShellyBasePlugin.Status
+  fullName: ShellyPlugin.IShellyBasePlugin.Status
+- uid: ShellyPlugin.ShellyBasePlugin.Reboot*
+  commentId: Overload:ShellyPlugin.ShellyBasePlugin.Reboot
+  name: Reboot
+  nameWithType: ShellyBasePlugin.Reboot
+  fullName: ShellyPlugin.ShellyBasePlugin.Reboot
+- uid: ShellyPlugin.IShellyBasePlugin.Reboot
+  commentId: P:ShellyPlugin.IShellyBasePlugin.Reboot
+  parent: ShellyPlugin.IShellyBasePlugin
+  name: Reboot
+  nameWithType: IShellyBasePlugin.Reboot
+  fullName: ShellyPlugin.IShellyBasePlugin.Reboot
+- uid: ShellyPlugin.ShellyBasePlugin.TurnOnOff*
+  commentId: Overload:ShellyPlugin.ShellyBasePlugin.TurnOnOff
+  name: TurnOnOff
+  nameWithType: ShellyBasePlugin.TurnOnOff
+  fullName: ShellyPlugin.ShellyBasePlugin.TurnOnOff
+- uid: ShellyPlugin.IShellyBasePlugin.TurnOnOff
+  commentId: P:ShellyPlugin.IShellyBasePlugin.TurnOnOff
+  parent: ShellyPlugin.IShellyBasePlugin
+  name: TurnOnOff
+  nameWithType: IShellyBasePlugin.TurnOnOff
+  fullName: ShellyPlugin.IShellyBasePlugin.TurnOnOff
+- uid: ShellyPlugin.ShellyBasePlugin.SettingsRelay*
+  commentId: Overload:ShellyPlugin.ShellyBasePlugin.SettingsRelay
+  name: SettingsRelay
+  nameWithType: ShellyBasePlugin.SettingsRelay
+  fullName: ShellyPlugin.ShellyBasePlugin.SettingsRelay
+- uid: ShellyPlugin.IShellyBasePlugin.SettingsRelay
+  commentId: P:ShellyPlugin.IShellyBasePlugin.SettingsRelay
+  parent: ShellyPlugin.IShellyBasePlugin
+  name: SettingsRelay
+  nameWithType: IShellyBasePlugin.SettingsRelay
+  fullName: ShellyPlugin.IShellyBasePlugin.SettingsRelay
+- uid: ShellyPlugin.ShellyBasePlugin.Relay*
+  commentId: Overload:ShellyPlugin.ShellyBasePlugin.Relay
+  name: Relay
+  nameWithType: ShellyBasePlugin.Relay
+  fullName: ShellyPlugin.ShellyBasePlugin.Relay
+- uid: ShellyPlugin.IShellyBasePlugin.Relay
+  commentId: P:ShellyPlugin.IShellyBasePlugin.Relay
+  parent: ShellyPlugin.IShellyBasePlugin
+  name: Relay
+  nameWithType: IShellyBasePlugin.Relay
+  fullName: ShellyPlugin.IShellyBasePlugin.Relay
+- uid: ShellyPlugin.ShellyBasePlugin.SettingsColor*
+  commentId: Overload:ShellyPlugin.ShellyBasePlugin.SettingsColor
+  name: SettingsColor
+  nameWithType: ShellyBasePlugin.SettingsColor
+  fullName: ShellyPlugin.ShellyBasePlugin.SettingsColor
+- uid: ShellyPlugin.IShellyBasePlugin.SettingsColor
+  commentId: P:ShellyPlugin.IShellyBasePlugin.SettingsColor
+  parent: ShellyPlugin.IShellyBasePlugin
+  name: SettingsColor
+  nameWithType: IShellyBasePlugin.SettingsColor
+  fullName: ShellyPlugin.IShellyBasePlugin.SettingsColor
+- uid: ShellyPlugin.ShellyBasePlugin.SettingsWhite*
+  commentId: Overload:ShellyPlugin.ShellyBasePlugin.SettingsWhite
+  name: SettingsWhite
+  nameWithType: ShellyBasePlugin.SettingsWhite
+  fullName: ShellyPlugin.ShellyBasePlugin.SettingsWhite
+- uid: ShellyPlugin.IShellyBasePlugin.SettingsWhite
+  commentId: P:ShellyPlugin.IShellyBasePlugin.SettingsWhite
+  parent: ShellyPlugin.IShellyBasePlugin
+  name: SettingsWhite
+  nameWithType: IShellyBasePlugin.SettingsWhite
+  fullName: ShellyPlugin.IShellyBasePlugin.SettingsWhite
+- uid: ShellyPlugin.ShellyBasePlugin.Color*
+  commentId: Overload:ShellyPlugin.ShellyBasePlugin.Color
+  name: Color
+  nameWithType: ShellyBasePlugin.Color
+  fullName: ShellyPlugin.ShellyBasePlugin.Color
+- uid: ShellyPlugin.IShellyBasePlugin.Color
+  commentId: P:ShellyPlugin.IShellyBasePlugin.Color
+  parent: ShellyPlugin.IShellyBasePlugin
+  name: Color
+  nameWithType: IShellyBasePlugin.Color
+  fullName: ShellyPlugin.IShellyBasePlugin.Color
+- uid: ShellyPlugin.ShellyBasePlugin.#ctor*
+  commentId: Overload:ShellyPlugin.ShellyBasePlugin.#ctor
+  name: ShellyBasePlugin
+  nameWithType: ShellyBasePlugin.ShellyBasePlugin
+  fullName: ShellyPlugin.ShellyBasePlugin.ShellyBasePlugin
+- uid: ShellyPlugin.ShellyBasePlugin.Execute*
+  commentId: Overload:ShellyPlugin.ShellyBasePlugin.Execute
+  name: Execute
+  nameWithType: ShellyBasePlugin.Execute
+  fullName: ShellyPlugin.ShellyBasePlugin.Execute
+- uid: ShellyPlugin.ShellyBasePlugin.ExecuteHttp*
+  commentId: Overload:ShellyPlugin.ShellyBasePlugin.ExecuteHttp
+  name: ExecuteHttp
+  nameWithType: ShellyBasePlugin.ExecuteHttp
+  fullName: ShellyPlugin.ShellyBasePlugin.ExecuteHttp
+- uid: ShellyPlugin.ShellyBasePlugin.ExecuteToggleLightHttp*
+  commentId: Overload:ShellyPlugin.ShellyBasePlugin.ExecuteToggleLightHttp
+  name: ExecuteToggleLightHttp
+  nameWithType: ShellyBasePlugin.ExecuteToggleLightHttp
+  fullName: ShellyPlugin.ShellyBasePlugin.ExecuteToggleLightHttp
+- uid: ShellyPlugin.ShellyBasePlugin.ExecuteMqtt*
+  commentId: Overload:ShellyPlugin.ShellyBasePlugin.ExecuteMqtt
+  name: ExecuteMqtt
+  nameWithType: ShellyBasePlugin.ExecuteMqtt
+  fullName: ShellyPlugin.ShellyBasePlugin.ExecuteMqtt
+- uid: ShellyPlugin.ShellyBasePlugin.ExecuteSetting*
+  commentId: Overload:ShellyPlugin.ShellyBasePlugin.ExecuteSetting
+  name: ExecuteSetting
+  nameWithType: ShellyBasePlugin.ExecuteSetting
+  fullName: ShellyPlugin.ShellyBasePlugin.ExecuteSetting
