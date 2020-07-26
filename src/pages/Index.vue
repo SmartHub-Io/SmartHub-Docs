@@ -85,8 +85,8 @@ export default {
   },
 
   metaInfo() {
-    const title = 'Great Documentation starts here';
-    const description = 'DOCC is a starter theme with instant search and dark mode for writing great technical documentation. Based on Gridsome!';
+    const title = 'SmartHub ';
+    const description = 'SmartHub is a small fast and reliable home server to manage your devices';
 
     return {
       title: title,
@@ -98,11 +98,6 @@ export default {
         {
           key: 'og:title',
           name: 'og:title',
-          content: title,
-        },
-        {
-          key: 'twitter:title',
-          name: 'twitter:title',
           content: title,
         },
         {
