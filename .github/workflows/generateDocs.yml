@@ -15,74 +15,30 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checkout repos   
     - name: Checkout SmartHub-Docu repo
       uses: actions/checkout@v2
-            
-    - name: Checkout SmartHub repo
-      uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+    - uses: actions/setup-node@v1
       with:
-        repository: SmartHub-Io/SmartHub
-        path: develop
-        
-    - name: Checkout SmartHub-Plugins repo
-      uses: actions/checkout@v2
-      with:
-        repository: SmartHub-Io/SmartHub-Plugins
-        path: develop-plugins
+        node-version: '12'
+    - run: npm install
+    - run: ls
+    - run: npm run build
+    - run: ls
 
-    # install
-    - name: Chocolatey Action
-      uses: crazy-max/ghaction-chocolatey@v1.2.2
-      with:
-        # Arguments to pass to Chocolatey
-        args: -h
-      
-    - name: install docfx
-      run: choco install docfx
-      
-    - name: test
-      run: |
-        ls
-        cd docfx_project
-        ls
-    # move needed repo files to build folder
-    - name: move SmartHub solution
-      run: |
-        mkdir D:\a\SmartHub-Docs\SmartHub-Docs\docs\docfx_project\src
-        move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub\SmartHub.Api D:\a\SmartHub-Docs\SmartHub-Docs\docfx_project\src
-        move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub\SmartHub.Application D:\a\SmartHub-Docs\SmartHub-Docs\docfx_project\src
-        move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub\SmartHub.Domain D:\a\SmartHub-Docs\SmartHub-Docs\docfx_project\src
-        move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub\SmartHub.Infrastructure D:\a\SmartHub-Docs\SmartHub-Docs\docfx_project\src
-        move D:\a\SmartHub-Docs\SmartHub-Docs\develop\SmartHub\SmartHub.sln D:\a\SmartHub-Docs\SmartHub-Docs\docfx_project\src
-      
-    - name: move SmartHub-Plugins solution
-      run: |
-        mkdir D:\a\SmartHub-Docs\SmartHub-Docs\docfx_project\src-plugins
-        move D:\a\SmartHub-Docs\SmartHub-Docs\develop-plugins\SmartHub-Plugins\MockPlugin D:\a\SmartHub-Docs\SmartHub-Docs\docfx_project\src-plugins
-        move D:\a\SmartHub-Docs\SmartHub-Docs\develop-plugins\SmartHub-Plugins\ShellyPlugin D:\a\SmartHub-Docs\SmartHub-Docs\docfx_project\src-plugins
-        move D:\a\SmartHub-Docs\SmartHub-Docs\develop-plugins\SmartHub-Plugins\SmartHub-Plugins.sln D:\a\SmartHub-Docs\SmartHub-Docs\docfx_project\src-plugins
 
-    # build  
-    - name: build docu
-      run: docfx docfx_project/docfx.json
-        
-    - name: tes
-      run: |
-        ls
-        cd docfx_project
-        ls
-    # publish to gihub pages    
+      # publish to gihub pages
     - name: GitHub Pages
       uses: crazy-max/ghaction-github-pages@v2.1.0
       with:
         target_branch: gh-pages
         # Build directory to deploy
-        build_dir: docfx_project\_site
+        build_dir: SmartHub-Docs\dist
         # Commit message
         commit_message: Documentation update
     env:
