@@ -6,11 +6,12 @@
 
 module.exports = {
   siteName: 'Smarthub',
+  siteUrl: 'https://SmartHub-Docs.github.io',
+  pathPrefix: '/SmartHub-Docs',
   icon: {
     favicon: './src/assets/default_64.png',
     touchicon: './src/assets/default_64.png'
   },
-  siteUrl: (process.env.SITE_URL ? process.env.SITE_URL : 'https://example.com'),
   settings: {
     URL_GITHUB: 'https://github.com/SmartHub-Io/SmartHub',
     github: true,
