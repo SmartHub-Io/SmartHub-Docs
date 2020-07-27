@@ -73,7 +73,7 @@ query {
 <script>
 import ToggleDarkMode from "@/components/ToggleDarkMode";
 import Logo from '@/components/Logo';
-import { SunIcon, MoonIcon, GlobeIcon, GithubIcon, TwitterIcon } from "vue-feather-icons";
+import { SunIcon, MoonIcon, GlobeIcon, GithubIcon } from "vue-feather-icons";
 
 const Search = () => import(/* webpackChunkName: "search" */ "@/components/Search").catch(error => console.warn(error));
 
@@ -86,7 +86,6 @@ export default {
     MoonIcon,
     GlobeIcon,
     GithubIcon,
-    TwitterIcon
   },
 
   computed: {

@@ -74,11 +74,6 @@ export default {
           content: title,
         },
         {
-          key: 'twitter:title',
-          name: 'twitter:title',
-          content: title,
-        },
-        {
           key: 'og:description',
           name: 'og:description',
           content: description,
