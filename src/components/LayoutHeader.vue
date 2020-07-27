@@ -27,7 +27,7 @@
           </div>
         </div>
 
-        <div class="w-3/12 px-2 sm:px-4 max-w-screen-xs">
+        <div class="w-5/12 px-2 sm:px-4 max-w-screen-xs">
           <ClientOnly>
             <Search />
           </ClientOnly>

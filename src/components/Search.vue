@@ -36,7 +36,7 @@
         <li
           v-else
           v-for="(result, index) in results"
-          :key="result.path + result.anchor"
+          :key="result.item.path + result.item.anchor"
           @mouseenter="focusIndex = index"
           @mousedown="go"
           class="border-ui-sidebar"
@@ -45,21 +45,21 @@
           }"
         >
           <g-link
-            :to="result.path + result.anchor"
+            :to="result.item.path + result.item.anchor"
             class="block p-2 -mx-2 text-base font-bold rounded-lg"
             :class="{
               'bg-ui-sidebar text-ui-primary': focusIndex === index,
             }"
           >
 
-            <span v-if="result.value === result.title">
-              {{ result.value }}
+            <span v-if="result.item.value === result.item.title">
+              {{ result.item.value }}
             </span>
 
             <span v-else class="flex items-center">
-              {{ result.title }}
+              {{ result.item.title }}
               <ChevronRightIcon size="1x" class="mx-1" />
-              <span class="font-normal opacity-75">{{ result.value }}</span>
+              <span class="font-normal opacity-75">{{ result.item.value }}</span>
             </span>
 
           </g-link>
@@ -109,9 +109,9 @@ export default {
     results() {
       const fuse = new Fuse(this.headings, {
         keys: ['value'],
-        threshold: .25
+        threshold: .25,
+        shouldSort: true,
       });
-
       return fuse.search(this.query).slice(0, 15);
     },
     headings() {
@@ -154,7 +154,6 @@ export default {
       }
 
       let result;
-
       // If we don't have focus on a result, just navigate to the first one.
       if (this.focusIndex === -1) {
         result = this.results[0];
@@ -162,8 +161,9 @@ export default {
         result = this.results[this.focusIndex];
       }
 
+      console.log()
       this.$router.push(
-        result.path + result.anchor
+        result.item.path + result.item.anchor
       );
 
       // Unfocus the input and reset the query.

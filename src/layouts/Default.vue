@@ -10,31 +10,29 @@
         <LayoutHeader />
       </header>
 
-      <main class="container relative flex flex-wrap justify-start flex-1 w-full bg-ui-background">
+      <main class="container pb-0 mb-0 relative flex flex-wrap justify-start flex-1 w-full bg-ui-background overflow-auto">
 
         <aside
           v-if="hasSidebar"
-          class="sidebar"
+          class="sidebar overflow-auto"
           :class="{ 'open': sidebarOpen }"
           :style="sidebarStyle"
         >
-          <div class="w-full pb-16 bg-ui-background">
+          <div class="w-full bg-ui-background">
             <Sidebar @navigate="sidebarOpen = false" />
           </div>
         </aside>
 
         <div
-          class="w-full pb-8"
+          class="w-full pb-6"
           :class="{'pl-0 lg:pl-12 lg:w-3/4': hasSidebar}"
         >
           <slot />
         </div>
-
       </main>
-
     </div>
 
-    <div v-if="hasSidebar" class="fixed bottom-0 right-0 z-50 p-8 lg:hidden">
+    <div v-if="hasSidebar" class="fixed bottom-0 right-0 z-50 p-6 lg:hidden">
       <button class="p-3 text-white rounded-full shadow-lg bg-ui-primary hover:text-white" @click="sidebarOpen = ! sidebarOpen">
         <XIcon v-if="sidebarOpen" />
         <MenuIcon v-else />
@@ -62,7 +60,7 @@ export default {
     Sidebar,
     LayoutHeader,
     MenuIcon,
-    XIcon
+    XIcon,
   },
   data() {
     return {
@@ -122,6 +120,27 @@ export default {
   --color-ui-sidebar: theme('colors.gray.200');
   --color-ui-border: theme('colors.gray.300');
   --color-ui-primary: theme('colors.indigo.600');
+}
+/*Scrollbar*/
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: var(--color-ui-sidebar);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-ui-border);
+  border-radius: 100vh;
+  border: 3px solid #edf2f7;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c1cacb;
 }
 
 html[lights-out] {
@@ -293,6 +312,7 @@ table {
 }
 
 .sidebar {
+  overflow: auto;
   @apply fixed bg-ui-background px-4 inset-x-0 bottom-0 w-full border-r border-ui-border overflow-y-auto transition-all z-40;
   transform: translateX(-100%);
 

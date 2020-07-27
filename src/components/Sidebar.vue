@@ -2,7 +2,7 @@
   <div
     ref="sidebar"
     v-if="showSidebar"
-    class="px-4 pt-8 lg:pt-12"
+    class="px-4 pt-6 lg:pt-6"
   >
     <div
       v-for="(section, index) in sidebar.sections"
