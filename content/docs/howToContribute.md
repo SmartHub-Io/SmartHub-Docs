@@ -7,11 +7,12 @@ next: '/docs/how-to-create-a-plugin/'
 
 # How to contribute
 
-When contributing to this repository, please first discuss the change you wish to make via an issue, or any other method with the owners of this repository before making a change.
-
-Please note we have a code of conduct, please follow it in all your interactions with the project.
-
+When contributing to this repository, please first discuss the change you wish to make via an issue, or any other method with the owners of this repository before making a change.  
 If you find any spelling mistakes or have improvements to offer, we are open to anyone who has ideas and wants to contribute to this project.
+
+To develop on your local machine and contribute to any project, just follow the steps for the respective project.  
+
+Note we have a code of conduct, please follow it in all your interactions with the project.
 
 ## Pull Request Process
 
@@ -21,11 +22,7 @@ If you find any spelling mistakes or have improvements to offer, we are open to 
 2. Update the README and/ or documentation with details of the changes. (if needed)
 3. Your pull request will be reviewed by the team and if everything is in order it will get merged.
 
-## Local installation
-
-To develop on your local machine and contribute to any project, just follow the steps for the respective project.
-
-## To SmartHub
+## SmartHub
 
 Follow these steps if you want to contribute to the __SmartHub__ project
 
@@ -68,7 +65,7 @@ __Use_Staticfiles_DEV__ => indicates wheter the pogramm uses a proxy to the sepe
 For a nice postgresql-ui a pgadmin container is also started, go to [Link](http://localhost:5050) and type in the credentials from the compose file.
 If you don't like that you can of course still connect any other tool with the database.
 
-## To Documentation
+## SmartHub-Docs
 
 Follow these steps if you want to contribute to the __Smarthub-Docs__ project.
 
@@ -83,7 +80,7 @@ Follow these steps if you want to contribute to the __Smarthub-Docs__ project.
 ### Run
 Jist go to the root directory and type into the terminal  `npm run dev`.
 
-## To Plugins
+## SmartHub-Plugins
 
 Follow these steps if you want to contribute to the __Smarthub-Plugins__ project.
 
