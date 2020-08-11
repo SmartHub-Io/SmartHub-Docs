@@ -143,6 +143,7 @@ export default {
   background: #c1cacb;
 }
 
+/* dark mode  = lights-out stan as const in the ToggleDarkMode.vue component*/
 html[lights-out] {
   --color-ui-background: theme('colors.gray.900');
   --color-ui-typo: theme('colors.gray.100');
