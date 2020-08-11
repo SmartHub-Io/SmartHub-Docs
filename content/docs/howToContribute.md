@@ -18,9 +18,9 @@ Note we have a code of conduct, please follow it in all your interactions with t
 
 > __The PR process applies to all repositories !!__
 
-1. Ensure the code is up to date and be sure that the code follows the clean code guidelines and all CI/CD pipelines are __green__.
-2. Update the README and/ or documentation with details of the changes. (if needed)
-3. Your pull request will be reviewed by the team and if everything is in order it will get merged.
+1. Ensure the code is up to date and be sure that the code follows the clean code guidelines and all pipeline checkarks are __green__.
+2. Update the README and/ or documentation(SmartHub-Docs) with details of the changes. (if needed)
+3. Your pull request will be reviewed by the team and if everything is fine it will get merged.
 
 ## SmartHub
 
