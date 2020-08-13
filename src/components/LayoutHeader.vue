@@ -1,9 +1,9 @@
 <template>
   <div class="py-2 border-t-2 border-ui-primary">
-    <div class="container">
+    <div class="pl-12 pr-12">
 
       <div class="flex items-center justify-between -mx-2 sm:-mx-4">
-        <div class="flex flex-col items-center px-2 mr-auto sm:px-4 sm:flex-row">
+        <div class="flex flex-col items-center px-2 sm:px-4 sm:flex-row">
           <g-link
             to="/"
             class="flex items-center text-ui-primary"
@@ -20,22 +20,23 @@
               v-for="link in settings.nav.links"
               :key="link.path"
               :to="link.path"
-              class="p-1 font-medium nav-link text-ui-typo hover:text-ui-primary"
+              class="p-1 font-medium nav-link text-ui-typo"
             >
-              {{ link.title }}
+              <span class="hover:text-ui-primary" >
+                 {{ link.title }}
+              </span>
             </g-link>
           </div>
         </div>
 
-        <div class="w-5/12 px-2 sm:px-4 max-w-screen-xs">
+        <div class="w-5/12 px-2 sm:px-2 max-w-screen-xs">
           <ClientOnly>
             <Search />
           </ClientOnly>
         </div>
 
         <div class="flex items-center justify-end px-2 sm:px-4">
-
-          <a v-if="settings.github" :href="settings.URL_GITHUB" class="sm:ml-3" target="_blank" rel="noopener noreferrer" title="Github" name="Github">
+          <a v-if="settings.github" :href="settings.URL_GITHUB" class="sm:ml-3" target="_blank" rel="noopener noreferrer" title="Github">
             <GithubIcon size="1.5x" />
           </a>
 
