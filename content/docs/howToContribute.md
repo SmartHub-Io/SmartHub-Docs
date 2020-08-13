@@ -45,6 +45,9 @@ Follow these steps if you want to contribute to the __SmartHub__ project
     - Go to "SmartHub.Ui/"
         - Type into terminal `npm install`
     - Go to "SmartHub.Api/"
+        - Open the "appsetting.json" file and pass in your __Pgsql_User__ and __Pgsql_pwd__.(see below for default values)
+            - This step only needs to be done until we update to _.net 5_ than you can do something like `dotnet ef database update -- Use_Staticfiles_DEV=false Pgsql_User=<your name> Pgsql_pwd=<your pwd>` ([Link](https://github.com/dotnet/efcore/issues/8332#issuecomment-667712216))
+        - Befor commiting check that file, so you don't commit your credentials. To say git that it should not commit it use `git update-index --assume-unchanged <path/>to/file>`.
         - Type into terminal `dotnet ef database update`
 
 ### Run
