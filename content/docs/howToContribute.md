@@ -7,28 +7,44 @@ next: '/docs/how-to-create-a-plugin/'
 
 # How to contribute
 
-When contributing to this repository, please first discuss the change you wish to make via an issue, or any other method with the owners of this repository before making a change.  
-If you find any spelling mistakes or have improvements to offer, we are open to anyone who has ideas and wants to contribute to this project.
+We appreciate contributions of any kind. By participation in these projects, you agree to abide by our [code of conduct](https://github.com/SmartHub-Io/SmartHub/blob/master/.github/CODE_OF_CONDUCT.md).
+
+### Any enhancements/bugs/etc you see?
+
+Add an [issue](https://github.com/SmartHub-Io/SmartHub/issues/new/choose). We'll review it, add labels and reply as soon as possible.
+
+### Documentation/etc need updating?
+
+Go right ahead! Just submit a pull request when you're done.
+
+## Pull Requests
+
+We love pull requests from everyone.
+
+> **The PR process applies to all repositories !!**
+
+> **All changes to [SmartHub](https://github.com/SmartHub-Io/SmartHub) or [SmartHub-Plugins](https://github.com/SmartHub-Io/SmartHub-Plugins) should be based from the `dev` branch.**
+
+1. Fork, then clone the repo.
+2. Push your changes to your fork and [submit a pull request](https://github.com/SmartHub-Io/SmartHub/compare) against the dev branch.    
+    Some tips:
+    1. Ensure the code is up to date __and__ all required pipelines are passed.
+    2. Update the README and/ or documentation(SmartHub-Docs) - if needed
+    3. Write tests.
+    4. Write a good [commit message](https://chris.beams.io/posts/git-commit)
+3. Your pull request will be reviewed by the team and if everything is fine it will get merged. We may suggest some changes, improvements or alternatives.
+
+## Get your Environment ready
 
 To develop on your local machine and contribute to any repository _([SmartHub](https://github.com/SmartHub-Io/SmartHub), 
-[SmartHub-Docs](https://github.com/SmartHub-Io/SmartHub-Docs), [SmartHub-Plugins](https://github.com/SmartHub-Io/SmartHub-Plugins))_, 
-just follow the steps below for the respective one.  
+[SmartHub-Docs](https://github.com/SmartHub-Io/SmartHub-Docs), [SmartHub-Plugins](https://github.com/SmartHub-Io/SmartHub-Plugins))_,
+just follow the steps below for the respective one. 
 
-Note we have a code of conduct, please follow it in all your interactions with the project.
-
-## Pull Request Process
-
-> __The PR process applies to all repositories !!__
-
-1. Ensure the code is up to date, that the code follows the clean code guidelines __and__ all required pipelines are passed.
-2. Update the README and/ or documentation(SmartHub-Docs) with details of the changes. (if needed)
-3. Your pull request will be reviewed by the team and if everything is fine it will get merged.
-
-## SmartHub
+### SmartHub
 
 Follow these steps if you want to contribute to the __SmartHub__ project
 
-### Installation
+#### Installation
 
 1. Docker
     - Download and install docker for your OS [Link](https://docs.docker.com/)
@@ -53,7 +69,7 @@ Follow these steps if you want to contribute to the __SmartHub__ project
         - Befor commiting check that file, so you don't commit your credentials. To say git that it should not commit it use `git update-index --assume-unchanged <path/>to/file>`.
         - Type into terminal `dotnet ef database update`
 
-### Run
+#### Run
 
 1. Run `docker-compose up` from the "SmartHub.Api/" folder. _(starting database)_
 2. Run `dotnet run Use_Staticfiles_DEV=false Pgsql_User=<your name> Pgsql_pwd=<your pwd>` from "SmartHub.Api" folder.
@@ -67,16 +83,16 @@ __Pgsql_pwd__ => the pwd which is set in the docker-compose.override.yml file (_
 __Use_Staticfiles_DEV__ => indicates whether the program uses a proxy to the separated started Ui or servers the Ui as static files (default is "false")
 > Be aware running the program without these args will cause errors at the moment !!!
 
-### Database Ui
+#### Database Ui
 For a nice postgresql-ui a pgadmin container is started aswell, go to [Link](http://localhost:5050) and type in the credentials from the docker-compose.yml file. 
 (__default__ = pgadmin4@pgadmin.org and admin)  
 If you don't like that you can of course remove that service from the docker-compose file and/ or connect any other tool with the database.
 
-## SmartHub-Docs
+### SmartHub-Docs
 
 Follow these steps if you want to contribute to the __Smarthub-Docs__ project.
 
-### Installation
+#### Installation
 
 1. Clone repository
     - `git clone https://github.com/SmartHub-Io/SmartHub-Docs.git`
@@ -84,16 +100,16 @@ Follow these steps if you want to contribute to the __Smarthub-Docs__ project.
     - Go to the root directory
         - Type into a terminal `npm install`
 
-### Run
+#### Run
 Just go to the root directory and type into a terminal  `npm run dev`.
 
-## SmartHub-Plugins
+### SmartHub-Plugins
 
 Follow these steps if you want to contribute to the __Smarthub-Plugins__ project.  
 You can only make sure all plugins can be build, you can't run them directly from this dotnet solution. 
 More information on plugins are on the next page.
 
-### Installation
+#### Installation
 
 1. Clone repository
     - `git clone https://github.com/SmartHub-Io/SmartHub-Plugins.git`
