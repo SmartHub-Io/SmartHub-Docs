@@ -10,7 +10,7 @@
         <LayoutHeader />
       </header>
 
-      <main class="container pb-0 mb-0 relative flex flex-wrap justify-start flex-1 w-full bg-ui-background overflow-auto">
+      <main class="pl-12 m-0 relative flex flex-wrap justify-start flex-1 w-full bg-ui-background overflow-auto">
 
         <aside
           v-if="hasSidebar"
@@ -83,8 +83,7 @@ export default {
   computed: {
     sidebarStyle() {
       return {
-        top: this.headerHeight + 'px',
-        height: `calc(100vh - ${this.headerHeight}px)`
+        top: this.headerHeight + 'px'
       }
     },
     hasSidebar() {
@@ -136,13 +135,14 @@ export default {
 ::-webkit-scrollbar-thumb {
   background: var(--color-ui-border);
   border-radius: 100vh;
-  border: 3px solid #edf2f7;
+  border: 2px solid #4a607c;
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #c1cacb;
+  background: #4a607c;
 }
 
+/* dark mode  = lights-out stan as const in the ToggleDarkMode.vue component*/
 html[lights-out] {
   --color-ui-background: theme('colors.gray.900');
   --color-ui-typo: theme('colors.gray.100');
@@ -313,7 +313,7 @@ table {
 
 .sidebar {
   overflow: auto;
-  @apply fixed bg-ui-background px-4 inset-x-0 bottom-0 w-full border-r border-ui-border overflow-y-auto transition-all z-40;
+  @apply fixed bg-ui-background w-full px-4 inset-x-0 bottom-0 border-r border-ui-border overflow-y-auto transition-all z-40;
   transform: translateX(-100%);
 
   &.open {
@@ -321,7 +321,7 @@ table {
   }
 
   @screen lg {
-    @apply w-1/4 px-0 bg-transparent top-0 bottom-auto inset-x-auto sticky z-0;
+    @apply w-2/12 px-0 bg-transparent top-0 bottom-auto inset-x-auto sticky z-0;
     transform: translateX(0);
   }
 }

@@ -24,7 +24,7 @@
         >
           <g-link
             :to="`${page.path}`"
-            class="flex items-center py-1 font-semibold"
+            class="flex items-center py-1 font-semibold transition transform hover:translate-x-1"
           >
            <span
               class="absolute w-2 h-2 -ml-3 rounded-full opacity-0 bg-ui-primary transition transform scale-0 origin-center"
