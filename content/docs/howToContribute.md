@@ -67,7 +67,7 @@ Follow these steps if you want to contribute to the __SmartHub__ project
         - Open the "appsetting.json" file and pass in your __Pgsql_User__ and __Pgsql_pwd__.(see below for default values)
             - This step only needs to be done until we update to _.net 5_ than you can do something like `dotnet ef database update -- Use_Staticfiles_DEV=false Pgsql_User=<your name> Pgsql_pwd=<your pwd>` ([Link](https://github.com/dotnet/efcore/issues/8332#issuecomment-667712216))
         - Befor commiting check that file, so you don't commit your credentials. To say git that it should not commit it use `git update-index --assume-unchanged <path/>to/file>`.
-        - Type into terminal `dotnet ef database update`
+        - Type into terminal `dotnet ef database update` **This is not absolutely necessary, because it is executed automatically at startup.**
 
 #### Run
 
@@ -86,7 +86,7 @@ __Use_Staticfiles_DEV__ => indicates whether the program uses a proxy to the sep
 #### Database Ui
 For a nice postgresql-ui a pgadmin container is started aswell, go to [Link](http://localhost:5050) and type in the credentials from the docker-compose.yml file. 
 (__default__ = pgadmin4@pgadmin.org and admin)  
-If you don't like that you can of course remove that service from the docker-compose file and/ or connect any other tool with the database.
+This service is by default commented out from the dockerfile if you like to use it, just uncomment it.
 
 ### SmartHub-Docs
 
