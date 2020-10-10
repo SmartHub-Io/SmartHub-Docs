@@ -21,24 +21,25 @@ Go right ahead! Just submit a pull request when you're done.
 
 We love pull requests from everyone.
 
-> **The PR process applies to all repositories !!**
-
+> **The PR process applies to all repositories !!**  
 > **All changes to [SmartHub](https://github.com/SmartHub-Io/SmartHub) or [SmartHub-Plugins](https://github.com/SmartHub-Io/SmartHub-Plugins) should be based from the `dev` branch.**
 
-1. Fork, then clone the repo.
-2. Push your changes to your fork and [submit a pull request](https://github.com/SmartHub-Io/SmartHub/compare) against the dev branch.    
+1. Clone (or fork) the repo.
+2. Create a new branch, please use the [gitflow naming](https://danielkummer.github.io/git-flow-cheatsheet/).
+    - e.g. "feature/addFeatureNameHere", "hotfix/addNameHere"
+3. Push your changes to your branch and [submit a pull request](https://github.com/SmartHub-Io/SmartHub/compare) against the dev branch.  
     Some tips:
-    1. Ensure the code is up to date __and__ all required pipelines are passed.
+    1. Ensure the code is up to date __and__ all required pipelines are passed.(if forked you won't see the pipeline results)
     2. Update the README and/ or documentation(SmartHub-Docs) - if needed
     3. Write tests.
     4. Write a good [commit message](https://chris.beams.io/posts/git-commit)
-3. Your pull request will be reviewed by the team and if everything is fine it will get merged. We may suggest some changes, improvements or alternatives.
+4. Your pull request will be reviewed and if everything is fine it will get merged. We may suggest some changes, improvements or alternatives.
 
 ## Get your Environment ready
 
 To develop on your local machine and contribute to any repository _([SmartHub](https://github.com/SmartHub-Io/SmartHub), 
 [SmartHub-Docs](https://github.com/SmartHub-Io/SmartHub-Docs), [SmartHub-Plugins](https://github.com/SmartHub-Io/SmartHub-Plugins))_,
-just follow the steps below for the respective one. 
+just follow the steps below for the respective one.
 
 ### SmartHub
 
@@ -84,6 +85,7 @@ __Use_Staticfiles_DEV__ => indicates whether the program uses a proxy to the sep
 > Be aware running the program without these args will cause errors at the moment !!!
 
 #### Database Ui
+
 For a nice postgresql-ui a pgadmin container is started aswell, go to [Link](http://localhost:5050) and type in the credentials from the docker-compose.yml file. 
 (__default__ = pgadmin4@pgadmin.org and admin)  
 This service is by default commented out from the dockerfile if you like to use it, just uncomment it.
@@ -101,6 +103,7 @@ Follow these steps if you want to contribute to the __Smarthub-Docs__ project.
         - Type into a terminal `npm install`
 
 #### Run
+
 Just go to the root directory and type into a terminal  `npm run dev`.
 
 ### SmartHub-Plugins
