@@ -52,13 +52,15 @@ Follow these steps if you want to contribute to the __SmartHub__ project
 2. .Net core
     - Download and install .net core sdk for your OS [Link](https://dotnet.microsoft.com/download)
     - Project currently at 3.1.3
-3. Ef core tool
+3. Node.js
+    - Download and install Node.js for you OS [Link](https://nodejs.org/en/)
+4. Ef core tool
     - Install Entity Framework core tool globally. Insert following command into your terminal:
     `dotnet tool install --global dotnet-ef`  
     - To update it type into a terminal `dotnet tool update --global dotnet-ef`
-4. Clone Repository
+5. Clone Repository
     - `git clone https://github.com/SmartHub-Io/SmartHub.git`
-5. Build and create database
+6. Build and create database
     - Go to "SmartHub.Api/"
         - Type into a terminal `dotnet restore` then `dotnet build`
     - Go to "SmartHub.Ui/"
