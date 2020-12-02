@@ -37,7 +37,7 @@ We love pull requests from everyone.
 
 ## Get your Environment ready
 
-To develop on your local machine and contribute to any repository _([SmartHub](https://github.com/SmartHub-Io/SmartHub), 
+To develop on your local machine and contribute to any repository _([SmartHub](https://github.com/SmartHub-Io/SmartHub),
 [SmartHub-Docs](https://github.com/SmartHub-Io/SmartHub-Docs), [SmartHub-Plugins](https://github.com/SmartHub-Io/SmartHub-Plugins))_,
 just follow the steps below for the respective one.
 
@@ -49,9 +49,8 @@ Follow these steps if you want to contribute to the __SmartHub__ project
 
 1. Docker
     - Download and install docker for your OS [Link](https://docs.docker.com/)
-2. .Net core
-    - Download and install .net core sdk for your OS [Link](https://dotnet.microsoft.com/download)
-    - Project currently at 3.1.3
+2. .Net 5
+    - Download and install .net 5 sdk for your OS [Link](https://dotnet.microsoft.com/download)
 3. Node.js
     - Download and install Node.js for you OS [Link](https://nodejs.org/en/)
 4. Ef core tool
@@ -68,8 +67,7 @@ Follow these steps if you want to contribute to the __SmartHub__ project
     - Go to "SmartHub.Api/"
         - Type into a terminal `docker-compose up` or `docker-compose up -d` (so you don't need to open a new terminal)
         - Open the "appsetting.json" file and pass in your __Pgsql_User__ and __Pgsql_pwd__.(see below for default values)
-            - This step only needs to be done until we update to _.net 5_ than you can do something like `dotnet ef database update -- Use_Staticfiles_DEV=false Pgsql_User=<your name> Pgsql_pwd=<your pwd>` ([Link](https://github.com/dotnet/efcore/issues/8332#issuecomment-667712216))
-        - Befor commiting check that file, so you don't commit your credentials. To say git that it should not commit it use `git update-index --assume-unchanged <path/>to/file>`.
+            - **OR** `dotnet ef database update -- Pgsql_User=<your name> Pgsql_pwd=<your pwd>` (if yo do this you can skip the next step)
         - Type into terminal `dotnet ef database update` **This is not absolutely necessary, because it is executed automatically at startup.**
 
 #### Run
@@ -85,12 +83,6 @@ __Pgsql_pwd__ => the pwd which is set in the docker-compose.override.yml file (_
     -> Edit these in the docker.compose.override.yml file  
 __Use_Staticfiles_DEV__ => indicates whether the program uses a proxy to the separated started Ui or servers the Ui as static files (default is "false")
 > Be aware running the program without these args will cause errors at the moment !!!
-
-#### Database Ui
-
-For a nice postgresql-ui a pgadmin container is started aswell, go to [Link](http://localhost:5050) and type in the credentials from the docker-compose.yml file. 
-(__default__ = pgadmin4@pgadmin.org and admin)  
-This service is by default commented out from the dockerfile if you like to use it, just uncomment it.
 
 ### SmartHub-Docs
 
